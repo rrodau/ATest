@@ -1,0 +1,83 @@
+{
+  "hidden_layers": [
+    [
+      20,
+      10
+    ],
+    [
+      50,
+      10
+    ],
+    [
+      100,
+      10
+    ]
+  ],
+  "bias_layers": [
+    [
+      10,
+      2
+    ],
+    [
+      50,
+      2
+    ]
+  ],
+  "max_steps": [
+    5000,
+    10000
+  ],
+  "start_batch_size": [
+    10
+  ],
+  "end_batch_size": [
+    100
+  ],
+  "start_qids": [
+    10
+  ],
+  "end_qids": [
+    20
+  ],
+  "model": [
+    "DirectRankerAdvFlip",
+    "DirectRankerSymFlip",
+    "DirectRankerAdv",
+    "FairListNet",
+    "DebiasClassifier"
+  ],
+  "noise_module": [
+    1,
+    0
+  ],
+  "noise_type": [
+    "sigmoid_full",
+    "default",
+    "sigmoid_sep"
+  ],
+  "dataset": [
+    "compas",
+    "law-race",
+    "law-gender",
+    "adult",
+    "wiki"
+  ],
+  "preprocess_fn": [
+    "quantile"
+  ],
+  "fair_loss": [
+    "ranking"
+  ],
+  "random_seed": [
+    42
+  ],
+  "learning_rate": [
+    0.01
+  ],
+  "gamma": [
+    1,
+    10,
+    100,
+    0.1
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "hidden_layers": [
+    [
+      10,
+      5
+    ]
+  ],
+  "bias_layers": [
+    [
+      20,
+      2
+    ]
+  ],
+  "max_steps": [
+    10
+  ],
+  "start_batch_size": [
+    10
+  ],
+  "end_batch_size": [
+    50
+  ],
+  "start_qids": [
+    10
+  ],
+  "end_qids": [
+    20
+  ],
+  "model": [
+    "DirectRankerAdvFlip",
+    "DirectRankerSymFlip",
+    "DirectRankerAdv",
+    "FairListNet",
+    "DebiasClassifier"
+  ],
+  "noise_module": [
+    1,
+    0
+  ],
+  "dataset": [
+    "compas",
+    "law-race",
+    "law-gender",
+    "adult"
+  ],
+  "preprocess_fn": [
+    "standard"
+  ],
+  "fair_loss": [
+    "ranking"
+  ],
+  "random_seed": [
+    42
+  ],
+  "learning_rate": [
+    0.001
+  ],
+  "gamma": [
+    1
+  ]
+}
